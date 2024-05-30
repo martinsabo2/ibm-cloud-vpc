@@ -5,12 +5,6 @@
 # https://github.com/IBM-Cloud/terraform-provider-ibm/releases
 # ------------------------------------------------------------------------------
 
-variable "ibmcloud_api_key" {
-  type = string
-  sensitive = true
-  description = "value of the IBM Cloud API key"
-}
-
 terraform {
   required_version = ">= 1.5.6, < 2.0.0"
 
