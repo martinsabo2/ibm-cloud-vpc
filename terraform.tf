@@ -1,0 +1,28 @@
+# ------------------------------------------------------------------------------
+# Terraform configuration
+#
+# IBM Terraform provider releases:
+# https://github.com/IBM-Cloud/terraform-provider-ibm/releases
+# ------------------------------------------------------------------------------
+
+variable "ibmcloud_api_key" {
+  type = string
+  sensitive = true
+  description = "value of the IBM Cloud API key"
+}
+
+terraform {
+  required_version = ">= 1.5.6, < 2.0.0"
+
+  required_providers {
+    ibm = {
+      source = "IBM-Cloud/ibm"
+      version = "~>1.65.0"
+    }
+  }
+}
+
+provider "ibm" {
+  ibmcloud_api_key = var.ibmcloud_api_key
+  region           = var.region
+}

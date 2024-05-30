@@ -1,0 +1,111 @@
+{
+    "products": [
+       {
+          "name": "Test VPC",
+          "label": "Test VPC",
+          "product_kind": "solution",
+          "tags": [
+          ],
+          "keywords": [
+          ],
+          "short_description": "Short description of your product.",
+          "long_description": "A longer description of your product.",
+          "offering_docs_url": "URL",
+          "offering_icon_url": "URL or emebbed image",
+          "provider_name": "Community",
+          "module_info": {
+             "works_with": [
+                {
+                   "catalog_id": "",
+                   "name": "module name",
+                   "kind": "terraform",
+                   "version": "0.1.0",
+                   "flavor": "Variation name"
+                }
+             ]
+          },
+          "support_details": "Explanation of support.",
+          "features": [
+             {
+                "title": "Feature 1 title",
+                "description": "Feature 1 description"
+             },
+             {
+                "title": "Feature 2 title",
+                "description": "Feature 2 description"
+             }
+          ],
+          "flavors": [
+             {
+                "label": "Display name",
+                "name": "Programatic name",
+                "install_type": "Install type",
+                "working_directory": "Directory path",
+                "usage_template": "template",
+                "scripts": [
+                   {
+                      "type": "ansible",
+                      "short_description": "Short description of what your script is intended to do.",
+                      "path": "Path to script location.",
+                      "stage": "The stage. For example, pre.",
+                      "action": "The action. For example, validate."
+                   }
+                ],
+                "change_notices": {
+                   "breaking": [
+                      {
+                         "title": "Title of breaking change",
+                         "description": "Description of the change."
+                      }
+                   ],
+                   "new": [
+                      {
+                         "title": "Title of new feature",
+                         "description": "Description of the new feature or capability."
+                      }
+                   ],
+                   "update": [
+                      {
+                         "title": "Title of general update",
+                         "description": "Description of the general update."
+                      }
+                   ]
+                },
+                "compliance": {
+                   "authority": "scc-v3",
+                   "controls": [
+                      {
+                         "profile": {
+                            "name": "Security and Compliance Center profile name",
+                            "version": "Profile version"
+                         },
+                         "names": [
+                            "Control name 1 e.g. AC-2(a)",
+                            "Control name 2",
+                            "Control name 3"
+                         ]
+                      }
+                   ]
+                },
+                "configuration": [
+                   {
+                      "key": "ibmcloud_api_key",
+                      "required": true,
+                      "type": "string"
+                   }
+                ],
+                "outputs": [
+                   {
+                      "description": "Output description",
+                      "key": "key"
+                   },
+                   {
+                      "description": "Output description",
+                      "key": "key"
+                   }
+                ]
+             }
+          ]
+       }
+    ]
+ }
